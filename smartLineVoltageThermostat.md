@@ -6,18 +6,18 @@ My home is 4 stories and the builder was smart to put the furnace on the 4th flo
 ## Making it a Smart Heater
 The thermostat is a single-pole line voltage thermostat. Since the thermostat is manual, it is using a metal plate that expand based on the temperature and then if its too cold it would release a button that is pushed by default to turn it on. so when button is pushed the switch is closed and when its not pressed the switch is open and the power flows. This is important since it means if the button is not pressed the heater is on and if the button is pressed the the heater is off. The circuit diagram looks like this:
 <p>
-    <img src="images/heater/circuit.png" width="400">
+    <img src="images/heater/circuit.png" width="400" />
 </p>
 
 The physical button is the white small button under the lever, can see it here
 <p>
-    <img src="images/heater/thermometer_button.jpeg" width="400">
+    <img src="images/heater/thermometer_button.jpeg" width="400" />
 </p>
 
 ### Minimally Invasive Solution
 I tried making it smart. First, I tried to get a button pusher thats zwave controlled (see pic below) to just push or release the button. but it was super hard to calibrate it cuz its not powerful enough for the button. The button is very hard to push so it tries to push it and then backs off. So I tried to make a long lever to increase the torque, but the lever was a little flimsy and hard to keep from moving around. also the fact that when the button isn't pressed it means power flows and heater is on made it scary. If the button or lever fails then the heater will be on until I physically go and fix it. So not a great solution.
 <p>
-    <img src="images/heater/switchbot_button_pusher.jpg" width="400">
+    <img src="images/heater/switchbot_button_pusher.jpg" width="400" />
 </p>
 
 ### More Invasive Solution
@@ -25,22 +25,27 @@ I ended up switching over to a sonoff switch. so basically took out the thermost
 
 This the old thermostat:
 <p>
-    <img src="images/heater/thermometer_front.jpeg" width="400">
+    <img src="images/heater/thermometer_front.jpeg" width="400" />
 </p>
 
 This is the sonoff switch:
 <p>
-    <img src="images/heater/Sonoff_installed.jpeg" width="400">
+    <img src="images/heater/Sonoff_installed.jpeg" width="400" />
 </p>
 
 This is the Bluetooth thermometer:
 <p>
-    <img src="images/heater/BLE_Thermometer.jpeg" width="400">
+    <img src="images/heater/BLE_Thermometer.jpeg" width="400" />
 </p>
 
 Homeassistant climate UI component:
 <p>
-    <img src="images/heater/HA_Climate_Control.jpeg" width="400">
+    <img src="images/heater/HA_Climate_Control.jpeg" width="400" />
+</p>
+
+The completed product once everything is hidden, calling it the Frankenstat:
+<p>
+    <img src="images/heater/frankenstat.jpg" width="400"/>
 </p>
 
 #### Sonoff Component Setup
