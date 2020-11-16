@@ -1,7 +1,3 @@
-[Headers](#headers)
-[Emphasis](#emphasis)
-<a name="headers"/>
-
 ## Problem
 My home is 4 stories and the builder was smart to put the furnace on the 4th floor. This made it super hard for the furnace to push heat down to the first floor bedroom that I use as an office. After working with them, they decided to install a 240V heater in the 1st floor bedroom and use a line voltage thermostat to controll it. This solution is not ideal since:
 1. It is an electrical solution, now I have to pay more boo :(
