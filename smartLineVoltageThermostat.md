@@ -49,7 +49,7 @@ The completed product once everything is hidden, calling it the Frankenstat:
 </p>
 
 #### Sonoff Component Setup
-It is recommended to flash tasmota onto sonoff switches, but the sonoff switch I'm using is the Sonoff Basic Switch R2. This one is a bit harder to flash. Instead, I decided to use [SonoffLan](https://github.com/AlexxIT/SonoffLAN) custom component to control sonoff switches. To set this up, I added this custom repo into HACS and then installed 'Sonoff Lan' component. Once all installed, I configured switch in the configuartion file like so:
+It is recommended to flash tasmota onto sonoff switches, but the sonoff switch I'm using is the Sonoff Basic Switch R2. The R2 is harder to flash since it cannot be flashed [OTA without some tweaking](https://tasmota.github.io/docs/devices/Sonoff-Basic/#sonoff-basic-r2). Instead, I decided to use [SonoffLan](https://github.com/AlexxIT/SonoffLAN) custom component to control sonoff switches. To set this up, I added this custom repo into HACS and then installed 'Sonoff Lan' component. Once all installed, I configured switch in the configuartion file like so:
 
 ```
 sonoff:
