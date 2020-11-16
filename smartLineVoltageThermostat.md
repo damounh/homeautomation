@@ -42,3 +42,24 @@ Homeassistant climate UI component:
 <p>
     <img src="images/heater/HA_Climate_Control.jpeg" width="400">
 </p>
+
+#### Sonoff Component Setup
+It is recommended to flash tasmota onto sonoff switches, but the sonoff switch I'm using is the Sonoff Basic Switch R2. This one is a bit harder to flash. Instead, I decided to use [SonoffLan](https://github.com/AlexxIT/SonoffLAN) custom component to control sonoff switches. To set this up, I added this custom repo into HACS and then installed 'Sonoff Lan' component. Once all installed, I configured switch in the configuartion file like so:
+
+```
+sonoff:
+  username: [username]
+  password: [password]
+```
+
+#### HA Configuration
+To setup the configuration just need to use the ['Generic Thermostat'](https://www.home-assistant.io/integrations/generic_thermostat) integration and point the heater to the sonoff switch and the target_sensor to the BLE thermometer. For me this was:
+
+```
+climate:
+  - platform: generic_thermostat
+    name: Office
+    heater: switch.office_heater
+    target_sensor: sensor.a4_c1_38_4d_d9_d1_temp
+    precision: 0.1
+```
