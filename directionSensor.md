@@ -199,18 +199,18 @@ ota:
 The only home assistant configuration was to add the ESPs that have been deployed through ESPHome to HA. This was done by through integrations:
 
 <p>
-    <img src="images/direction_sensor/esp_home_ha_integrations.png" width="500" />
+    <img src="images/direction_sensor/esp_home_ha_integrations.png" width="300" />
 </p>
 
 #### Automation Configuration
 Created two counter in automation Helpers to track occupancy for Main Floor (2nd floor) and 3rd Floor:
 
 <p>
-    <img src="images/direction_sensor/automation_helpers_counters.png" width="500" />
+    <img src="images/direction_sensor/automation_helpers_counters.png" width="750" />
 </p>
 
 <p>
-    <img src="images/direction_sensor/main_floor_occupant_counter.png" width="500" />
+    <img src="images/direction_sensor/main_floor_occupant_counter.png" width="300" />
 </p>
 
 Automation to increment people in living room:
