@@ -255,4 +255,10 @@ mode: single
 ## Result
 It took a lot of trial an error to tune the code. Initially, I was having the ESP report the distance each ToF sensor was reading and was performing the direction determination logic within the HomeAssistant automation. Unfortunately, this proved to result to many false positive. {Need to expand on this part}. Instead, decided to move the logic onto the ESP and have the ESP determine the direction. This proved to be much more reliable.
 
-For now, there are far less false positives. {Need to add statistics here}
+For now, there are far less false positives. {Need to add stats here}
+
+## Improvements and Potential Changes
+* Explore deep, light, and modem sleep to use less power. Maybe can switch over to using a battery, that would be nice!
+    * Currently consuming ~2watts {Need to add more stats here}
+* Experiment with placement of the sensors (ie. half-way up the staircase...)
+* Explore combining other sensors such as BLE or bluetooth classic to identify people.
