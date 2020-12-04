@@ -258,7 +258,7 @@ It took a lot of trial an error to tune the code. Initially, I was having the ES
 
 
 ## 5.0 Improvements and Potential Changes
-* Clean up the ESP code, too many nested conditions
+* Refactor the ESP code, it's difficult to read and spaghetti, no good
 * Move away from having to emit 'Up'/'Down' and then 'None'. There isn't really a need to do this, it was just a quick workaround to get things working
 * Explore deep, light, and modem sleep to use less power. Maybe can switch over to using a battery, that would be nice!
     * Currently consuming ~2watts {Need to add more stats here}
