@@ -2,7 +2,7 @@
 It took a lot of trial an error to tune the code. Initially, I was having the ESP report the distance each ToF sensor was reading and was performing the direction determination logic within the HomeAssistant automation. Unfortunately, this proved to result to many false positive. {Need to expand on this part}. Instead, decided to move the logic onto the ESP and have the ESP determine the direction. This proved to be much more reliable, there are far less false positives but there still needs to be some tuning and cleaning up of the code.
 
 <p>
-    <img src="images/direction_sensor/direction_sensor_demo.webp" width="500" />
+    <img src="images/direction_sensor/direction_sensor_demo.webp" width="350" />
 </p>
 
 ## Purpose/Problem
