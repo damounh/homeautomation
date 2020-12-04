@@ -1,3 +1,8 @@
+## The Result of Creating a Direction Sensor
+It took a lot of trial an error to tune the code. Initially, I was having the ESP report the distance each ToF sensor was reading and was performing the direction determination logic within the HomeAssistant automation. Unfortunately, this proved to result to many false positive. {Need to expand on this part}. Instead, decided to move the logic onto the ESP and have the ESP determine the direction. This proved to be much more reliable, there are far less false positives but there still needs to be some tuning and cleaning up of the code.
+
+<iframe width="560" height="315" src="https://drive.google.com/file/d/12Ld1CUOSFrYDOTqst1hZedTe7dJppxKY/view?usp=sharing" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Purpose/Problem
 My home has 4 stories and each floor is open concept. This makes it annoying to have to keep turning on lights and easy to forget to turn off lights. Instead of having to ask Alexa or use the HomeAssistant app to turn the lights on or off, it would be great if I can detect the number of occupants on each floor and turn the lights on and off. This can easily be done using PIR motion sensors to turn lights on and off, but I wanted to see if I can also count the number of people on each floor. By being able to know the number of people in the house and the number of people on each floor, it would open up opportunity for more automations.
 
@@ -252,13 +257,10 @@ mode: single
 
 ```
 
-## Result
-It took a lot of trial an error to tune the code. Initially, I was having the ESP report the distance each ToF sensor was reading and was performing the direction determination logic within the HomeAssistant automation. Unfortunately, this proved to result to many false positive. {Need to expand on this part}. Instead, decided to move the logic onto the ESP and have the ESP determine the direction. This proved to be much more reliable.
-
-For now, there are far less false positives. {Need to add stats here}
-
 ## Improvements and Potential Changes
+* Clean up the ESP code, too many nested conditions
+* Move away from having to emit 'Up'/'Down' and then 'None'. There isn't really a need to do this, it was just a quick workaround to get things working
 * Explore deep, light, and modem sleep to use less power. Maybe can switch over to using a battery, that would be nice!
     * Currently consuming ~2watts {Need to add more stats here}
 * Experiment with placement of the sensors (ie. half-way up the staircase...)
-* Explore combining other sensors such as BLE or bluetooth classic to identify people.
+* Explore combining other sensors such as BLE or bluetooth classic to identify people
