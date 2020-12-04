@@ -47,8 +47,11 @@ Since I don't always carry my phone with me and would not like to carry around a
 * Home Assistant Configured
 * ESPHome installed
 * ESP8266 or ESP32
+  * Can find these anywhere really, I ordered a devkit version to make it easier to experiment. This is the one I used: https://www.amazon.com/gp/product/B08LCVKQ1B
 * 2x VL53L0X
+  * I ordered mine from Amazon to get faster shipping: https://www.amazon.com/gp/product/B07XXTMRR2. You can find much cheaper prices on digikey or alibaba: https://nl.aliexpress.com/item/4000501203735.html
 * Breadboard or home made PCB
+  * I ordered some solderless breadboards from Amazon: https://www.amazon.com/gp/product/B01EV6LJ7G. Will probably swap them out for solderable breadboard to make it more slick, something like this: https://www.amazon.com/gp/product/B082KY5Y5Z. Again, can probably find these cheaper
 * Wires
 
 ### 3.1.1 ESP Logic
