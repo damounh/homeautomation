@@ -1,3 +1,5 @@
+# Experimenting with ToF to Build Direction Sensors
+
 ## 1.0 Purpose/Problem
 My home has 4 stories and each floor is open concept. This makes it annoying to have to keep turning on lights and easy to forget to turn off lights. Instead of having to ask Alexa or use the HomeAssistant app to turn the lights on or off, it would be great if I can detect the number of occupants on each floor and turn the lights on and off. This can easily be done using PIR motion sensors to turn lights on and off, but I wanted to see if I can also count the number of people on each floor. By being able to know the number of people in the house and the number of people on each floor, it would open up opportunity for more automations.
 
