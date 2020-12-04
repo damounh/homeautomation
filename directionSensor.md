@@ -259,11 +259,19 @@ It took a lot of trial an error to tune the code. Initially, I was having the ES
     <img src="images/direction_sensor/direction_sensor_demo.webp" width="350" />
 </p>
 
+### 4.1 Power Consumption
+This section is still WIP
+
+The total power consumption still needs to be verified but I think it should be sitting at around 0.85 watts. This is calculated by:
+* From the VL53L0X data sheet, it sucks about 10mA during operation and requires 3.3V, comes to around 0.033 Watts each
+* From the ESP32 data sheet, in the m ost inefficient use, it consumes 260 mA and requires 3.3V, comes to around 0.78 Watts
+
+This is still quiet a bit of power consumption.
 
 ## 5.0 Improvements and Potential Changes
 * Refactor the ESP code, it's difficult to read and spaghetti, no good
 * Move away from having to emit 'Up'/'Down' and then 'None'. There isn't really a need to do this, it was just a quick workaround to get things working
 * Explore deep, light, and modem sleep to use less power. Maybe can switch over to using a battery, that would be nice!
-    * Currently consuming ~2watts {Need to add more stats here}
+    * Currently consuming ~0.83 watts {Need to add more stats here}
 * Experiment with placement of the sensors (ie. half-way up the staircase...)
 * Explore combining other sensors such as BLE or bluetooth classic to identify people
